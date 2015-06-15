@@ -1,0 +1,22 @@
+{
+    "name": "leandrorodrigues/term-evaluation",
+    "description": "PHP library to evaluate search terms",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Leandro Rodrigues",
+            "email": "leandrorodriguescastro@gmail.com"
+        }
+    ],
+    "require": {
+        "require": {
+            "PHP" : ">=5.4"
+        }
+    },
+    "autoload": {
+      "psr-0": {
+        "TermEvaluation": "lib/"
+      }
+    }
+
+}
