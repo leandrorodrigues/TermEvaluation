@@ -9,9 +9,7 @@
         }
     ],
     "require": {
-        "require": {
-            "PHP" : ">=5.4"
-        }
+      "PHP" : ">=5.4"
     },
     "autoload": {
       "psr-0": {
