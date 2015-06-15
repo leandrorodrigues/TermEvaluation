@@ -30,7 +30,13 @@ class Evaluator
 			return new \DateTime($term);
 		}
 
-		if (preg_match('/^[\-\+]?[0-9]*([\.,][0-9]+)?$/', $term)) { //em caso de número
+		//em caso de número inteiro
+		if (preg_match('/^[\-\+]?[0-9]*$/', $term)) {
+			return intval($term);
+		}
+
+		//em caso de número float
+		if (preg_match('/^[\-\+]?[0-9]*([\.,][0-9]+)?$/', $term)) {
 			$term = str_replace(',', '.', $term);
 
 			return floatval($term);
